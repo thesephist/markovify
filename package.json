@@ -1,0 +1,28 @@
+{
+  "name": "markovify",
+  "version": "1.0.0",
+  "description": "Generate lyrics and sentences using a naive Markov chain",
+  "main": "app.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thesephist/markovify.git"
+  },
+  "keywords": [
+    "markov",
+    "graph",
+    "web-app"
+  ],
+  "author": "Linus Lee <linus@thesephist.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thesephist/markovify/issues"
+  },
+  "homepage": "https://github.com/thesephist/markovify#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
