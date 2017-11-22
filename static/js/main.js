@@ -39,6 +39,8 @@
                 .then(json => {
                     RESULT_CONTAINER.textContent = json.result 
                 })
+        } else {
+            RESULT_CONTAINER.textContent = 'Please pick a starting word. It can be as simple as "my" or "what".'
         }
     }
 

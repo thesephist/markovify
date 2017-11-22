@@ -166,7 +166,7 @@ class MarkovGraph {
                 .replace(/ \,/g, ',')
                 .replace(/ \?/g, '?')
                 .replace(/ \!/g, '!')
-            chars = chars[0].toUpperCase() + chars.substr(1) + '.'
+            chars = chars[0].toUpperCase() + chars.substr(1)
             if (i !== 0) a += ' '
             a += chars
         }
