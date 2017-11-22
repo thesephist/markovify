@@ -24,5 +24,6 @@ module.exports = {
             label: 'The Adventures of Tom Sawyer',
         },
     ],
+    port: 8080,
 }
 
