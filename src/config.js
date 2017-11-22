@@ -25,5 +25,11 @@ module.exports = {
         },
     ],
     port: 8080,
+    CORS_ALLOWED_ORIGINS: [
+        'markovify.com',
+        'markovify.com',
+        'localhost:8080',
+        'localhost',
+    ],
 }
 
