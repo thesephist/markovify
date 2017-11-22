@@ -50,5 +50,7 @@ server.addRoute('/options/', () => {
 
 server.use('/', express.static('./static/'))
 
-server.listen(Config.port)
+server.listen(Config.port, () => {
+    console.log('Server started.')
+})
 
