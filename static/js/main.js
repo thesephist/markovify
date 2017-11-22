@@ -5,7 +5,7 @@
     const SUBMIT_BUTTON = document.querySelector('button')
     const RESULT_CONTAINER = document.querySelector('.resultContainer')
 
-    const API_SERVER_PREFIX = 'https://markovify-seetmvejua.now.sh'
+    const API_SERVER_PREFIX = 'https://markovify-svfudrhgpw.now.sh'
 
     function createOptionForSource(sourceObject) {
         const optionEl = document.createElement('option')
