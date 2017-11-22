@@ -13,8 +13,12 @@ for (const {key, label} of Config.sources) {
 
 server.addRoute = function(route, handler) {
     this.get(route, function(req, res) {
+
+        if (Config.CORS_ALLOWED_ORIGINS.includes(req.get('Host'))) {
+            res.setHeader('Access-Control-Allow-Origin', req.protocol + '://' + req.get('Host'))
+        }
+
         res.setHeader('Content-Type', 'application/json')
-        res.setHeader('Access-Control-Allow-Origin', 'https://markovify.com')
         res.send(JSON.stringify(handler.apply(this, arguments)))
     })
 }
