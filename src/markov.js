@@ -160,13 +160,13 @@ class MarkovGraph {
     generateSentences(seed, length = 1) {
         let a = ''
         for (let i = 0; i < length; i ++) {
-            const chars = this.generateGraph(seed)
+            let chars = this.generateGraph(seed)
                 .join(' ')
                 .replace(/ \./g, '.')
                 .replace(/ \,/g, ',')
                 .replace(/ \?/g, '?')
                 .replace(/ \!/g, '!')
-            chars[0].toUpperCase() + chars.substr(1) + '.'
+            chars = chars[0].toUpperCase() + chars.substr(1) + '.'
             if (i !== 0) a += ' '
             a += chars
         }

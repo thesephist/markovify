@@ -28,6 +28,11 @@
         const seedWord = SEED_INPUT.value.toString().trim()
         const sourceKey = SOURCE_SELECTOR.value
 
+        if (!sourceKey) {
+            RESULT_CONTAINER.textContent = 'Please choose a source :)'
+            return
+        }
+
         if (seedWord) {
             fetch(`/generate/?source=${sourceKey}&seed=${seedWord}&sentence_count=1`)
                 .then(res => res.json())
@@ -43,3 +48,4 @@
     })
 
 })()
+

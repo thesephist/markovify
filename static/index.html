@@ -5,21 +5,39 @@
   <head>
     <title>Markovify</title>
     <link rel="stylesheet" href="/css/main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
 
-    <select id="markovify__source" name="markovify__source">
-      <!-- populated via JS -->
-    </select>
+    <header>
+      Markovify
+      <a href="https://github.com/thesephist/markovify">Markov what?</a>
+    </header>
 
-    <input type="text" id="markovify__seed" name="markovify__seed"/>
-    <button class="submitButton">Generate</button>
+    <main>
 
-    <div class="resultContainer">
-      <!-- populated via JS -->
-    </div>
+      <div class="inputs">
+        <select id="markovify__source" name="markovify__source">
+          <option value="">Choose a source...</option>
+          <!-- populated via JS from /options/ -->
+        </select>
 
+        <input type="text" id="markovify__seed" name="markovify__seed" value="my" placeholder="start with..."/>
+      </div>
+
+      <button class="submitButton">Autocomplete</button>
+
+      <div class="resultContainer">
+        <!-- populated via JS from /generate/ -->
+        To generate an autocomplete sentence, choose a source above, pick a starting word, and tap "Autocomplete"!
+      </div>
+
+      <div class="credits">
+        <p>Built with ❤️ and 💻 by <a href="//twitter.com/thesephist">Linus</a></p>
+      </div>
+
+    </main>
 
     <script src="/js/main.js"></script>
   </body>

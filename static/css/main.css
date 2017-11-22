@@ -1,9 +1,146 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'San Francisco', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'San Francisco', 'Helvetica Neue', sans-serif;
+    background: #F8F7FF;
 }
 
+html,
+body,
+main,
+div,
+input,
+select,
+button,
+header {
+    box-sizing: border-box;
+}
 
+header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #9381FF;
+    color: #fff;
+    padding: 12px 18px;
+    font-size: 24px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .2);
+}
 
+header > a {
+    float: right;
+    display: block;
+    font-size: .7em;
+    color: #F8F7FF;
+    text-decoration: none;
+    height: 24px;
+    background: rgba(255, 255, 255, .2);
+    padding: 3px 10px 1px 10px;
+}
+
+/* because of the header */
+main {
+    margin-top: 58px;
+}
+
+main,
+input,
+button,
+select {
+    font-size: 1.2em;
+}
+
+button,
+input {
+    text-align: center;
+}
+
+select,
+button,
+input {
+    line-height: 44px;
+}
+
+main {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+select {
+    background: #fff;
+    padding-left: 14px;
+}
+
+input {
+    width: 100%;
+    margin: 12px 0;
+}
+
+button,
+input,
+select,
+.resultContainer {
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px -2px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    transition: background .2s, transform .2s;
+    display:  block;
+    height: 44px;
+}
+
+button:active,
+input:focus {
+    outline: 0;
+    box-shadow: 0 6px 10px -4px rgba(0, 0, 0, .3);
+    transform: translateY(-3px);
+}
+
+button {
+    background: #9381FF;
+    color: #fff;
+}
+
+button:active {
+    background: #B8B8FF;
+}
+
+.resultContainer {
+    margin-top: 20px;
+    background: #fff;
+    min-height: 200px;
+    color: #777;
+    line-height: 1.4em;
+    padding: 10px 12px;
+}
+
+.credits {
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: #999;
+    margin-top: 30px;
+}
+
+.credits a {
+    color: #9381FF;
+    pointer: cursor;
+}
