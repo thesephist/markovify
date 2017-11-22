@@ -14,6 +14,7 @@ for (const {key, label} of Config.sources) {
 server.addRoute = function(route, handler) {
     this.get(route, function(req, res) {
         res.setHeader('Content-Type', 'application/json')
+        res.setHeader('Access-Control-Allow-Origin', 'markovify.com')
         res.send(JSON.stringify(handler.apply(this, arguments)))
     })
 }
