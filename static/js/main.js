@@ -5,6 +5,8 @@
     const SUBMIT_BUTTON = document.querySelector('button')
     const RESULT_CONTAINER = document.querySelector('.resultContainer')
 
+    const API_SERVER_PREFIX = ''
+
     function createOptionForSource(sourceObject) {
         const optionEl = document.createElement('option')
         optionEl.value = sourceObject.key
@@ -13,7 +15,7 @@
         return optionEl
     }
 
-    fetch('/options/')
+    fetch(API_SERVER_PREFIX + '/options/')
         .then(res => res.json())
         .then(json => {
             const frag = document.createDocumentFragment()
@@ -34,7 +36,7 @@
         }
 
         if (seedWord) {
-            fetch(`/generate/?source=${sourceKey}&seed=${seedWord}&sentence_count=1`)
+            fetch(API_SERVER_PREFIX + `/generate/?source=${sourceKey}&seed=${seedWord}&sentence_count=1`)
                 .then(res => res.json())
                 .then(json => {
                     RESULT_CONTAINER.textContent = json.result 
