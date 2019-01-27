@@ -28,7 +28,7 @@ module.exports = {
             label: 'WDD Applications',
         },
     ],
-    port: 8080,
+    port: 6000,
     CORS_ALLOWED_ORIGINS: [
         'https://markovify.com',
         'http://markovify.com',
