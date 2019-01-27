@@ -15,13 +15,17 @@ module.exports = {
             key: 'les-miserables',
             label: 'Les Miserables',
         },
+        // {
+        //     key: 'scarlet-letter',
+        //     label: 'The Scarlet Letter',
+        // },
+        // {
+        //     key: 'tom-sawyer',
+        //     label: 'The Adventures of Tom Sawyer',
+        // },
         {
-            key: 'scarlet-letter',
-            label: 'The Scarlet Letter',
-        },
-        {
-            key: 'tom-sawyer',
-            label: 'The Adventures of Tom Sawyer',
+            key: 'wdd-apps',
+            label: 'WDD Applications',
         },
     ],
     port: 8080,

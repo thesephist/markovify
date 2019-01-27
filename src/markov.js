@@ -3,7 +3,7 @@
 const fs = require('fs')
 
 // constants
-const MAX_FILE_LENGTH = 2e4
+const MAX_FILE_LENGTH = 6e4
 const MAX_UNIQUE_WORDS = 1e4
 const VALID_WORD_REGEX = /[A-Za-z\.\,\?\!\d\']+/g
 const VALID_WORD_REGEX_WITHOUT_PUNC = /[A-Za-z\d]+/g
